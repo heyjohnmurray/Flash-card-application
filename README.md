@@ -10,7 +10,7 @@ This is a Spanish vocabulary flash card application written entirely in JS.
 * "Flip" card button
 * Front &mdash; Spanish
 * Back &mdash; English
-* "Next card" button
+* "Next card" button.
 
 ### Minimum Viable product
 
@@ -30,3 +30,4 @@ This is a Spanish vocabulary flash card application written entirely in JS.
 * Social "shareable" score component
 * Back-end admin panel to add/remove words from the library
 * Were you right? yes/no self-assessment feature after they flip the card
+* Save card to "favorites". Add star icon
