@@ -1,2 +1,32 @@
 # Flash-card-application
-This is a Spanish vocabulary flash card application written entirely in JS
+--- 
+This is a Spanish vocabulary flash card application written entirely in JS.
+
+# Planning
+
+### UI
+
+* Simple card
+* "Flip" card button
+* Front &mdash; Spanish
+* Back &mdash; English
+* "Next card" button
+
+### Minimum Viable product
+
+1. Simple and fast. Very few animations. 3D flip transform back and forth is all.
+2. Desire to learn words quickly
+3. Single words, no phrases
+4. Levels of difficulty
+5. Start with 20 words
+
+
+### Future Features
+
+* Shuffle/Randomize words
+* Points system
+* Generate quiz from library of words
+* Flip between Spanish to English and English to Spanish
+* Social "shareable" score component
+* Back-end admin panel to add/remove words from the library
+* Were you right? yes/no self-assessment feature after they flip the card
