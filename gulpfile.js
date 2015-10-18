@@ -4,6 +4,14 @@ var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
+gulp.task('sass', function() {
+  return gulp.sass() // finish doing output for this task by adding src and dest paths
+});
+
+gulp.task('js', function() {
+
+});
+
 gulp.task('default', function() {
   // place code for your default task here
 });
