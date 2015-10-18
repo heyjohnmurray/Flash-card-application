@@ -12,7 +12,7 @@ var basePaths = {
 var paths = {
   styles: {
     src: basePaths.src + 'scss/',
-    dest: basePaths.dest + 'css'
+    dest: basePaths.dest + 'css/'
   },
 
   scripts: {
@@ -22,21 +22,20 @@ var paths = {
 };
 
 gulp.task('sass', function() {
-  return gulp.src('');
+  return gulp.src(paths.styles.src + '*.scss')
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(gulp.dest(paths.styles.dest));
 });
 
-gulp.task('js', function() {
+// gulp.task('js', function() {
+//
+// });
+//
+// gulp.task('watch', function(){
+//
+// });
 
-});
-
-gulp.task('watch', function(){
-
-});
-
-gulp.task('default', function() {
-  // place code for your default task here
-});
-
+gulp.task('default', ['sass']);
 
 // http://www.browsersync.io/docs/gulp/
-http://www.mikestreety.co.uk/blog/an-advanced-gulpjs-file
+// http://www.mikestreety.co.uk/blog/an-advanced-gulpjs-file
