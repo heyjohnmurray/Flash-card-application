@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -42,9 +43,17 @@ gulp.task('js', function() {
     .pipe(gulp.dest(paths.scripts.dest));
 });
 
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        }
+    });
+});
+
 gulp.task('watch', function(){
   gulp.watch(paths.styles.src + '*.scss', ['sass']);
   gulp.watch(paths.scripts.src + '*.js', ['js']);
 });
 
-gulp.task('default', ['sass', 'js', 'watch']);
+gulp.task('default', ['sass', 'js', 'browser-sync']);
