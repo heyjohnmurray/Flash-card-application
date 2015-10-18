@@ -31,11 +31,12 @@ gulp.task('sass', function() {
 //
 // });
 //
-// gulp.task('watch', function(){
-//
-// });
+gulp.task('watch', function(){
+  gulp.watch(paths.styles.src + '*.scss', ['sass']);
+  // gulp.watch(paths.scripts.src + '*.js', ['js']);
+});
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass', 'watch']);
 
 // http://www.browsersync.io/docs/gulp/
 // http://www.mikestreety.co.uk/blog/an-advanced-gulpjs-file
