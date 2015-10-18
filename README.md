@@ -31,3 +31,12 @@ This is a Spanish vocabulary flash card application written entirely in JS.
 * Back-end admin panel to add/remove words from the library
 * Were you right? yes/no self-assessment feature after they flip the card
 * Save card to "favorites". Add star icon
+
+### Prototypes
+#### Lo-Fi
+
+![spanish card face](https://github.com/heyjohnmurray/Flash-card-application/prototypes/lo-fi/card-face-spanish.png)
+
+![english card face](https://github.com/heyjohnmurray/Flash-card-application/prototypes/lo-fi/card-face-english.png)
+
+![modal for hinting](https://github.com/heyjohnmurray/Flash-card-application/prototypes/lo-fi/modal-hint.png)
