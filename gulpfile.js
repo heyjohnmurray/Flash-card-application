@@ -1,8 +1,9 @@
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
-var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
+var concat = require('gulp-concat');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 var basePaths = {
   src: 'app/src/',
@@ -22,8 +23,9 @@ var paths = {
 };
 
 gulp.task('sass', function() {
-  return gulp.src(paths.styles.src + '**/*.scss')
+  return gulp.src(paths.styles.src + 'partials/*.scss')
     .pipe(sourcemaps.init())
+    .pipe(concat('main.css'))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
