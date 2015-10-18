@@ -1,9 +1,13 @@
+// work on doing the 'js' task
+// then do the 'watch task'
+
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var uglify = require('gulp-uglify');
 
 var basePaths = {
   src: 'app/src/',
@@ -35,16 +39,18 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(paths.styles.dest));
 });
 
-// gulp.task('js', function() {
-//
-// });
-//
-gulp.task('watch', function(){
-  gulp.watch(paths.styles.src + '*.scss', ['sass']);
-  // gulp.watch(paths.scripts.src + '*.js', ['js']);
+gulp.task('js', function() {
+  return gulp.src(paths.scripts.src  + '*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.scripts.dest));
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('watch', function(){
+  gulp.watch(paths.styles.src + '*.scss', ['sass']);
+  gulp.watch(paths.scripts.src + '*.js', ['js']);
+});
+
+gulp.task('default', ['sass', 'js', 'watch']);
 
 // http://www.browsersync.io/docs/gulp/
 // http://www.mikestreety.co.uk/blog/an-advanced-gulpjs-file
