@@ -1,9 +1,5 @@
-// work on doing the 'js' task
-// then do the 'watch task'
-
 var gulp = require('gulp');
 var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync').create();
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -41,6 +37,7 @@ gulp.task('sass', function() {
 
 gulp.task('js', function() {
   return gulp.src(paths.scripts.src  + '*.js')
+    .pipe(concat('app.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.scripts.dest));
 });
@@ -51,6 +48,3 @@ gulp.task('watch', function(){
 });
 
 gulp.task('default', ['sass', 'js', 'watch']);
-
-// http://www.browsersync.io/docs/gulp/
-// http://www.mikestreety.co.uk/blog/an-advanced-gulpjs-file
