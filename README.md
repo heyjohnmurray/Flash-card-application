@@ -35,6 +35,6 @@ This is a Spanish vocabulary flash card application written entirely in JS.
 ### Prototypes
 #### Lo-Fi
 
-![spanish card face](https://raw.githubusercontent.com/heyjohnmurray/Flash-card-application/master/prototypes/lo-fi/card-face-english.png =180x230)
-![english card face](https://raw.githubusercontent.com/heyjohnmurray/Flash-card-application/master/prototypes/lo-fi/card-face-spanish.png =180x230)
-![modal for hinting](https://raw.githubusercontent.com/heyjohnmurray/Flash-card-application/master/prototypes/lo-fi/modal-hint.png =180x230)
+<img src="https://raw.githubusercontent.com/heyjohnmurray/Flash-card-application/master/prototypes/lo-fi/card-face-spanish.png" width="180" height="230">
+<img src="https://raw.githubusercontent.com/heyjohnmurray/Flash-card-application/master/prototypes/lo-fi/card-face-english.png" width="180" height="230">
+<img src="https://raw.githubusercontent.com/heyjohnmurray/Flash-card-application/master/prototypes/lo-fi/modal-hint.png" width="180" height="230">
