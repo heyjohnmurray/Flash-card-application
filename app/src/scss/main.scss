@@ -1,8 +1,2 @@
-body {
-  background-color: #f00;
-
-  p {
-    color: #fff;
-    text-decoration: underline;
-  }
-}
+@import 'partials/normalize';
+@import 'partials/base';
