@@ -1,5 +1,5 @@
 # Flash-card-application
---- 
+
 This is a Spanish vocabulary flash card application written entirely in JS.
 
 # Planning
@@ -17,7 +17,7 @@ This is a Spanish vocabulary flash card application written entirely in JS.
 1. Simple and fast. Very few animations. 3D flip transform back and forth is all.
 2. Desire to learn words quickly
 3. Single words, no phrases
-4. Levels of difficulty
+4. Hint feature
 5. Start with 20 words
 
 
