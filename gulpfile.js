@@ -56,4 +56,4 @@ gulp.task('watch', function(){
   gulp.watch(paths.scripts.src + '*.js', ['js']);
 });
 
-gulp.task('default', ['sass', 'js', 'browser-sync']);
+gulp.task('default', ['sass', 'js', 'browser-sync', 'watch']);
