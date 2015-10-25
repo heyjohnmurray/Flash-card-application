@@ -46,13 +46,8 @@ gulp.task('js', function() {
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        server: {
-            baseDir: "./"
-        }
+      server: "./"
     });
-
-    gulp.watch("app/src/partials/scss/*.scss", ['sass']);
-    gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 gulp.task('watch', function(){
