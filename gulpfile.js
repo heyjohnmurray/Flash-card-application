@@ -24,7 +24,7 @@ var paths = {
 };
 
 gulp.task('sass', function() {
-  return gulp.src(paths.styles.src + 'partials/*.scss')
+  return gulp.src(paths.styles.src + '/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(concat('main.css'))
     .pipe(autoprefixer({
@@ -51,9 +51,8 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function(){
-  gulp.watch('app/src/**/*.scss', ['sass']);
-  // gulp.watch(paths.styles.src + '*.scss', ['sass']);
-  // gulp.watch(paths.scripts.src + '*.js', ['js']);
+  gulp.watch(paths.styles.src + '/**/*.scss', ['sass']);
+  gulp.watch(paths.scripts.src + '*.js', ['js']);
 });
 
 gulp.task('default', ['browser-sync','sass', 'js', 'watch']);
