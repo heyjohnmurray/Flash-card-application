@@ -1,1 +1,0 @@
-var now=new Date;now.getDay()>0&&now.getDay()<6?(document.write("Sorry, it's a weekday."),alert("hello world!")):document.write("Hooray, it's a weekend!");
