@@ -1,0 +1,21 @@
+.card {
+  background-color: $color--card__bkg;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  padding: 2em;
+  @include breakpoint(small) {
+    width: 30em;
+  };
+
+  &__front {
+
+  }
+
+  &__vocab-word {
+    color: $color--card__vocab-word;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

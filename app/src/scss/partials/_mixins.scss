@@ -1,0 +1,12 @@
+/* these aren't set in stone. this needs to be mobile-first */
+@mixin breakpoint($point) {
+	@if $point == large {
+		@media (min-width: 1200px) { @content; }
+	}
+	@else if $point == medium {
+		@media (min-width: 992px) { @content; }
+	}
+	@else if $point == small {
+		@media (min-width: 768px)  { @content; }
+	}
+}
