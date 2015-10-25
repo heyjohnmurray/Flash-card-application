@@ -51,8 +51,9 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('watch', function(){
-  gulp.watch(paths.styles.src + '*.scss', ['sass']);
-  gulp.watch(paths.scripts.src + '*.js', ['js']);
+  gulp.watch('app/src/**/*.scss', ['sass']);
+  // gulp.watch(paths.styles.src + '*.scss', ['sass']);
+  // gulp.watch(paths.scripts.src + '*.js', ['js']);
 });
 
 gulp.task('default', ['browser-sync','sass', 'js', 'watch']);
