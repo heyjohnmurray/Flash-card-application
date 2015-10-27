@@ -4,15 +4,24 @@
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
   padding: 2em;
 
-  @include breakpoint(medium) {
-    width: 60em;
-    background-color: #f00;
+  @include breakpoint(mobile-horizontal) {
+    max-width: 30em;
   };
 
   &__action-panel {
-    li {
+    display: flex;
+
+    @include breakpoint(tablet) {
       display: inline-block;
-      
+    }
+
+    li {
+      flex: 1;
+
+      @include breakpoint(tablet) {
+        display: inline-block;
+        flex: none;
+      }
     }
   }
 
