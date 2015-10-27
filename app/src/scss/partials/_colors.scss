@@ -7,9 +7,15 @@ $color--gray-green: #f2f5ea;         /* gray green */
 $color--dark-gray-green: #d6dbd2;    /* dark gray green */
 $color--light-gray: #fcfcfc;
 
+$color--green: #53A548;
+$color--red: #D64933;
+
 /* base vars */
 $color--primary: $color--purple;
 $color--secondary: $color--pink;
+
+$color--accept: $color--green;
+$color--warning: $color--red;
 
 $color--body__bkg: $color--purple;
 

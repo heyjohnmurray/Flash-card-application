@@ -1,6 +1,13 @@
 body {
   background-color: $color--body__bkg;
+  color: $color--primary;
   font-size: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 p {
