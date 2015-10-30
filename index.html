@@ -8,9 +8,35 @@
         <link rel="stylesheet" href="app/dist/css/main.css">
     </head>
     <body>
-        <article>
-          <p>Ready for code.</p>
-        </article>
+        <main>
+          <article class="card">
+            <div class="card__front card__face">
+              <ul class="card__action-panel">
+                <li class="icon--favorite is-inactive">
+                  Save to library
+                </li>
+                <li class="icon--hint is-inactive">
+                  Give me a hint
+                </li>
+              </ul>
+              <p class="card__vocab-word">
+                Lorem
+              </p>
+              <!-- /.card__vocab-word -->
+              <ul class="card__action-panel">
+                <li class="icon--flip is-inactive">
+                  Flip the card
+                </li>
+              </ul>
+              <!-- /.card__action-panel -->
+            </div>
+            <!-- /.card__front -->
+            <div class="card__back card__face">
+              This is the back of the card.
+            </div>
+            <!-- /.card__back -->
+          </article>
+        </main>
 
         <script src="app/dist/js/app.js"></script>
     </body>

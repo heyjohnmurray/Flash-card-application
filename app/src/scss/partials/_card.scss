@@ -1,0 +1,61 @@
+.card {
+  position: relative;
+
+  &__face {
+    backface-visibility: hidden;
+    background-color: $color--card__bkg;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+    left: 0;
+    padding: 2em;
+    position: absolute;
+    top: 0;
+    transform-style: preserve3d;
+    transition: all 0.4s;
+    width: 85%;
+    min-height: 100%;
+
+    @include breakpoint(tablet) {
+      width: 300px;
+    }
+  }
+
+  &__back {
+    transform: rotateY(-180deg);
+  }
+
+  &__is-flipped {
+    .back {
+      transform: rotateY(0deg);
+    }
+
+    .front {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &__action-panel {
+    display: flex;
+
+    @include breakpoint(tablet) {
+      display: inline-block;
+    }
+
+    li {
+      flex: 1;
+
+      @include breakpoint(tablet) {
+        display: inline-block;
+        flex: none;
+      }
+    }
+  }
+
+  &__vocab-word {
+    color: $color--card__vocab-word;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

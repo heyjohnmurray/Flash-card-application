@@ -1,0 +1,57 @@
+[class^="icon"] {
+  background-repeat: no-repeat;
+  line-height: 18px;
+  padding-left: 25px;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.icon--favorite {
+  &.is-inactive {
+    background-image: url('/app/dist/images/icon-favorite-inactive.svg');
+    background-position: 4px 0;
+
+    &:hover {
+      background-image: url('/app/dist/images/icon-favorite-active.svg');
+    }
+  }
+
+  &.is-active {
+    background-image: url('/app/dist/images/icon-favorite-active.svg');
+    background-position: 4px 0;
+  }
+}
+
+.icon--flip {
+  &.is-inactive {
+    background-image: url('/app/dist/images/icon-flip-inactive.svg');
+    background-position: 4px 0;
+
+    &:hover {
+      background-image: url('/app/dist/images/icon-flip-active.svg');
+    }
+  }
+
+  &.is-active {
+    background-image: url('/app/dist/images/icon-flip-active.svg');
+  }
+}
+
+.icon--hint {
+  &.is-inactive {
+    background-image: url('/app/dist/images/icon-hint-inactive.svg');
+    background-position: 10px 0;
+
+    &:hover {
+      background-image: url('/app/dist/images/icon-hint-active.svg');
+    }
+  }
+
+  &.is-active {
+    background-image: url('/app/dist/images/icon-hint-active.svg');
+    background-position: 10px 0;
+  }
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="15px" viewBox="0 0 13 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>flash-card-app-sprites</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Shape-+-Shape" sketch:type="MSLayerGroup" fill="#756085">
+            <path d="M7.04334365,0 L7.04334365,2 L4.98065015,2 C4.98065015,2 0,2.94 0,8 C0,8 1.05650155,5 5.03095975,5 L7.04334365,5 L7.04334365,7 L13,3.45 L7.04334365,0 L7.04334365,0 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            <path d="M5.95665635,15 L5.95665635,13 L8.01934985,13 C8.01934985,13 13,12.06 13,7 C13,7 11.9535604,10 7.96904025,10 L5.95665635,10 L5.95665635,8 L0,11.55 L5.95665635,15 L5.95665635,15 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
